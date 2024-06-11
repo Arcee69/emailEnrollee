@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telehealth Service Completed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+        .footer {
+            text-align: center;
+            color: #a3a3a3;
+            margin-top: 40px;
+        }
+        .content {
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+       
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+     
+        .contact-info{
+            text-align: left;
+            width: 70%;
+            /* justify-content: center; */
+            display: flex;
+            flex-direction: column;
+            /* align-self: center; */
+            /* margin: 0 auto; */
+        }
+        .details {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img style="width: 35%;" src="https://phillipshmo.net/wp-content/uploads/2024/02/cropped-PHMO-Logo-2.png"/> 
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <th colspan="2" style="text-align: left;">Consultation Summary</th>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>{{date}}</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>{{time}}</td>
+                </tr>
+                <tr>
+                    <td>Session ID</td>
+                    <td>{{session_id}}</td>
+                </tr>
+            </table>
+            <p>Dear {{firstname}} {{lastname}},</p>
+            <p>Thank you for using our Telehealth service. Your consultation session was completed successfully.</p>
+            <p>Our care team will contact you with details of your prescription recommendation or referrals.</p>
+            <div class="contact-info">
+                <p>Get well soon!</p>
+            </div>
+        </div>
+        <div class="contact">
+            <p style="font-size: 13px; color: #a3a3a3; text-align: center;  margin-bottom: 0px;">For further assistance or information, do not hesitate to reach out to our 24/7 contact centre via:</p>
+            <div class="details">
+                <p style="font-size: 13px; color: #a3a3a3; margin-top: 0px; margin-bottom: 0px;">Email: <a href="mailto:care@phillipshmo.net" style="color: #05f;">care@phillipshmo.net</a></p>
+                <p style="font-size: 13px; color: #a3a3a3; margin-top: 0px; margin-bottom: 0px;">Telephone: <span style="text-decoration: underline; color: #05f;">+2342016339122</span> </p>
+                <p style="font-size: 13px; color: #a3a3a3; margin-top: 0px; margin-bottom: 0px;">Website: <a href="http://www.phillipshmo.net" style="color: #05f;">www.phillipshmo.net</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="font-size: 13px;">Powered by WellaHealth</p>
+        </div>
+    </div>
+</body>
+</html>
